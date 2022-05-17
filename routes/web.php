@@ -14,3 +14,6 @@ use App\Http\Controllers\PrincipalController;
 */
 
 Route::get('/', [PrincipalController::class, 'site']);
+Route::get('/empresas', [PrincipalController::class, 'site']);
+Route::get('/tecnicos', [PrincipalController::class, 'site']);
+Route::get('/relatorios', [PrincipalController::class, 'site']);
