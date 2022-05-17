@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PrincipalController;
+use App\Http\Controllers\site\EmpresaController;
+use App\Http\Controllers\site\TecnicoController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,7 +16,7 @@ use App\Http\Controllers\PrincipalController;
 |
 */
 
-Route::get('/', [PrincipalController::class, 'site']);
-Route::get('/empresas', [PrincipalController::class, 'site']);
-Route::get('/tecnicos', [PrincipalController::class, 'site']);
+Route::get('/principal', [PrincipalController::class, 'site']);
+Route::get('/empresas', [EmpresaController::class, 'site']);
+Route::get('/tecnicos', [TecnicoController::class, 'site']);
 Route::get('/relatorios', [PrincipalController::class, 'site']);
