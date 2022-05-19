@@ -20,3 +20,6 @@ Route::get('/principal', [PrincipalController::class, 'site']);
 Route::get('/empresas', [EmpresaController::class, 'site']);
 Route::get('/tecnicos', [TecnicoController::class, 'site']);
 Route::get('/relatorios', [PrincipalController::class, 'site']);
+Route::get('/login', function(){
+    return view('auth.login');
+});

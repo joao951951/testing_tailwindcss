@@ -1,6 +1,6 @@
-@include('layouts.top')
-@component('layouts.top_navbar', ['tela'=>'empresas'])
-@endcomponent('layouts.top_navbar')
-     
-   </body>
-</html>
+@extends('layouts.__includes.basic_lay')
+@section('tittle','Empresas')
+@section('content')
+@component('layouts.__components.top_navbar', ['tela'=>'empresas','varContent'=>$empresas])
+@endcomponent('layouts.__components.top_navbar')
+@endsection

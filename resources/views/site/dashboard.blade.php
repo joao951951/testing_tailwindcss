@@ -1,6 +1,3 @@
-@include('layouts.top')
-@component('layouts.top_navbar', ['tela'=>'inicial'])
-@endcomponent('layouts.top_navbar')
-     
-   </body>
-</html>
+@extends('layouts.__includes.basic_lay')
+@component('layouts.__components.top_navbar', ['tela'=>'inicial'])
+@endcomponent('layouts.__components.top_navbar')
